@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <style type="text/css">
+        .table {margin-bottom:0;}
+    </style>
+</head>
+<body>
+<div style="height: 500px;width: 500px;">
+    <table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>名称</th>
+            <th>城市</th>
+            <th>邮编</th>
+            <th>名称</th>
+            <th>城市</th>
+            <th>邮编</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>&#12288</td>
+            <td>&#12288</td>
+            <td>&#12288</td>
+            <td>&#12288</td>
+            <td>&#12288</td>
+            <td>&#12288</td>
+        </tr>
+    </tbody>
+</table>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>名称</th>
+            <th>城市</th>
+            <th>邮编</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>&#12288</td>
+            <td>&#12288</td>
+            <td>&#12288</td>
+        </tr>
+    </tbody>
+</table>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>名称</th>
+            <th>城市</th>
+            <th>邮编</th>
+            <th>名称</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>&#12288</td>
+            <td>&#12288</td>
+            <td>&#12288</td>
+            <td>&#12288</td>
+        </tr>
+    </tbody>
+</table>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>名称</th>
+            <th>城市</th>
+            <th>邮编</th>
+            <th>名称</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>&#12288</td>
+            <td>&#12288</td>
+            <td>&#12288</td>
+            <td>&#12288</td>
+        </tr>
+    </tbody>
+</table>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>名称</th>
+            <th>城市</th>
+            <th>邮编</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>&#12288</td>
+            <td>&#12288</td>
+            <td>&#12288</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<button id="aaa" onclick="aa();">asd</button>
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+window.onload=function () {
+        // var aas=document.getElementById('ddd').innerHTML;
+        var sss=new Array('A相电压','B相电压','C相电压','AB相电压','BC相电压','AC相电压','A相电流','B相电流','C相电流','总有功功率','功率因素','电网频率','A相有功功率','B相有功功率','C相有功功率','无功功率','A相无功功率','B相无功功率','C相无功功率','总视在功率');
+        
+        var aas=document.getElementsByTagName('th');
+        for (var i = aas.length - 1; i >= 0; i--) {
+            // alert();
+            aas[i].innerHTML=sss[i];
+        }
+
+    
+    }
+    function aa() {
+        var aas=document.getElementsByTagName('td');
+        for (var i = aas.length - 1; i >= 0; i--) {
+            // alert();
+            if (i>=0) {
+                aas[i].innerHTML=parseFloat((i/10));
+            }
+            
+        }
+    }
+    
+</script>
+</body>
+</html>
+
+
